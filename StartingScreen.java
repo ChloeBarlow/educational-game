@@ -11,7 +11,7 @@ public class StartingScreen extends World
     
     //declares instance variables
     private Button startButton;
-    private Button instruction;
+    private Button instructions;
     private Text medieval;
     private Text towerDefense;
     /**
@@ -23,13 +23,13 @@ public class StartingScreen extends World
         super(1000, 600, 1); 
         setBackground(new GreenfootImage("background.png"));
         startButton = new Button("START", 40, Color.WHITE);
-        instruction = new Button("INSTRUCTION", 40, Color.WHITE);
+        instructions = new Button("INSTRUCTIONS", 40, Color.WHITE);
         medieval = new Text("MEDIEVAL", 60, Color.WHITE);
         towerDefense = new Text("TOWER DEFENSE", 60, Color.WHITE);
         addObject(medieval, 770, 65);
         addObject(towerDefense, 770, 120);
         addObject(startButton, 770, 190);
-        addObject(instruction, 770, 230);
+        addObject(instructions, 770, 230);
     }
     /**
      * Checks if buttons have been click and will respond accordingly
@@ -39,8 +39,8 @@ public class StartingScreen extends World
         if(startButton.getClicked() == true){
             Greenfoot.setWorld(new GameWorld());
         }
-        if(instruction.getClicked() == true){
-            Greenfoot.setWorld(new Instruction());
+        if(instructions.getClicked() == true){
+            Greenfoot.setWorld(new Instructions());
         }
     }
 }
