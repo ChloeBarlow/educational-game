@@ -13,15 +13,11 @@ public class WDefender extends Towers
      */
     public WDefender() {  
         //Initialize animation frames
-        lv1Image1 = new GreenfootImage("wdefender_lv1_01.png");
-        lv1Image2 = new GreenfootImage("wdefender_lv1_02.png");
-        lv2Image1 = new GreenfootImage("wdefender_lv2_01.jpg");
+        lv1Image1 = new GreenfootImage("wdefender.png");
+        lv1Image2 = new GreenfootImage("wdefender.png");
+        lv2Image1 = new GreenfootImage("wdefender.png");
         //no proper second img
-        lv2Image2 = new GreenfootImage("wdefender_lv2_01.jpg");
-        lv1Image1.scale(25,25);
-        lv1Image2.scale(25,25);
-        lv1Image1.scale(25,25);
-        lv2Image2.scale(25,25);
+        lv2Image2 = new GreenfootImage("wdefender.png");
         setImage(lv1Image1);
         //Initialize firing variables. 
         range = 200;   
