@@ -28,11 +28,11 @@ public class StartingScreen extends World
         info = new Button("INFORMATION", 40, Color.WHITE);
         cyberSecurity = new Text("CYBER", 60, Color.WHITE);
         towerDefense = new Text("DEFENSE", 60, Color.WHITE);
-        addObject(cyberSecurity, 770, 65);
-        addObject(towerDefense, 770, 120);
-        addObject(startButton, 770, 190);
-        addObject(instructions, 770, 230);
-        addObject(info, 770, 270);
+        addObject(cyberSecurity, 770, 205);
+        addObject(towerDefense, 770, 260);
+        addObject(startButton, 770, 350);
+        addObject(instructions, 770, 390);
+        addObject(info, 770, 430);
     }
     /**
      * Checks if buttons have been click and will respond accordingly
