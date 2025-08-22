@@ -31,7 +31,7 @@ public class Instruction extends World
         // Create a new world with 1000x600 cells with a cell size of 1x1 pixels.
         super(1000, 600, 1); 
         // Set the background.
-        setBackground(new GreenfootImage("background.png"));
+        setBackground(new GreenfootImage("starting_background.jpg"));
         // Initialize the text box.
         textBox = new TextBox();
         // Add the text box to the world.
