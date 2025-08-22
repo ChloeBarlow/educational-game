@@ -14,7 +14,7 @@ public class Catapult extends Towers
     public Catapult() {    
         //Initialize animation frames
         lv1Image1 = new GreenfootImage("catapult_lv1_01.png");
-        lv1Image2 = new GreenfootImage("catapult_lv1_02.png");
+        lv1Image2 = new GreenfootImage("catapult_lv1_01.png");
         lv2Image1 = new GreenfootImage("catapult_lv2_01.png");
         lv2Image1 = new GreenfootImage("catapult_lv2_02.png");
         setImage(lv1Image1);

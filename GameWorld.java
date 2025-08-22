@@ -182,7 +182,7 @@ public class GameWorld extends World {
                         int y = m.getY()/50;
                         if(grids[x][y].getEmpty() == true){
                             if(indicator.getType() == 1){ 
-                                Crossbow tempCrossbow = new Crossbow();
+                                WDefender tempCrossbow = new WDefender();
                                 addObject(tempCrossbow, grids[x][y].getx(), grids[x][y].gety());
                                 towers[x][y] = tempCrossbow;
                                 grids[x][y].setEmpty(false);
@@ -313,15 +313,15 @@ public class GameWorld extends World {
         if(!startGrid.isPathAvailable()){
             if(randomize == 1 && score > 500)
             {
-                addObject(new Cavalry(), -25, 275);
+                addObject(new DownloadVirus(), -25, 275);
             }
             if(randomize == 2)
             {
-                addObject(new CrossbowMan(), -25, 275);
+                addObject(new KeyLogger(), -25, 275);
             }
             if(randomize == 3 && score > 250)
             {
-                addObject(new SwordMan(), -25, 275);
+                addObject(new Phishing(), -25, 275);
             }
         }
     }
