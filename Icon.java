@@ -30,7 +30,7 @@ public class Icon extends Actor
         Image1.mirrorHorizontally();
         Image2 = new GreenfootImage("catapult_lv1_01.png");
         Image2.mirrorHorizontally();
-        Image3 = new GreenfootImage("cannon_lv1.png");
+        Image3 = new GreenfootImage("nordvpn.png");
         Image3.mirrorHorizontally();
         Image4 = new GreenfootImage("upgrade.png");
         if(type == 0){
