@@ -31,7 +31,7 @@ public class Instructions extends World
         // Create a new world with 1000x600 cells with a cell size of 1x1 pixels.
         super(1000, 600, 1); 
         // Set the background.
-        setBackground(new GreenfootImage("background.png"));
+        setBackground(new GreenfootImage("starting_background.jpg"));
         // Initialize the text box.
         textBox = new TextBox();
         // Add the text box to the world.
@@ -43,8 +43,8 @@ public class Instructions extends World
         line2 = new Text("The objective is to prevent the viruses from reaching your computer", 20, Color.WHITE);
         line3 = new Text("Use the money that you have to begin with to install virus defenders", 20, Color.WHITE);
         line4 = new Text("To install a software, click the icon of the software that you want to build and click again on a empty grid", 20, Color.WHITE);
-        line5 = new Text("To upgrade software: lick on the upgarde icon and click on the building that you want to upgrade", 20, Color.WHITE);
-        line6 = new Text("Note that you can only install 1 software in every grid and you can only upgrade a tower once", 20, Color.WHITE);
+        line5 = new Text("To upgrade software: click on the upgrade icon and click on the building that you want to upgrade", 20, Color.WHITE);
+        line6 = new Text("Note that you can only install 1 software in every grid and you can only upgrade a software once", 20, Color.WHITE);
         line7 = new Text("Stopping viruses will grant you scores and money to install more software", 20, Color.WHITE);
         line8 = new Text("The spawn rate of the viruses will increase over time", 20, Color.WHITE);
         line9 = new Text("If total of 10 viruses infects your computer, you lose", 20, Color.WHITE);
