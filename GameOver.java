@@ -24,7 +24,7 @@ public class GameOver extends World
         // Create a new world with 1000x600 cells with a cell size of 1x1 pixels.
         super(1000, 600, 1); 
         //sets background image
-        setBackground(new GreenfootImage("background.png"));
+        setBackground(new GreenfootImage("starting_background.jpg"));
         //gets score from game world
         score = GameWorld.getScore();
         
@@ -34,10 +34,10 @@ public class GameOver extends World
         gameOver = new Text("GAME OVER", 60, Color.WHITE);
         gameScore = new Text("SCORE: " + score, 30, Color.WHITE);
         //adds buttons to world
-        addObject(restartButton, 800, 190);
-        addObject(menuButton, 800, 230);
-        addObject(gameOver, 800, 65);
-        addObject(gameScore, 800, 125);
+        addObject(restartButton, 800, 350);
+        addObject(menuButton, 800, 390);
+        addObject(gameOver, 800, 205);
+        addObject(gameScore, 800, 260);
         
     }
     /**
