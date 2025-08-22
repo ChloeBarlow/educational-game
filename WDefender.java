@@ -16,7 +16,6 @@ public class WDefender extends Towers
         lv1Image1 = new GreenfootImage("wdefender.png");
         lv1Image2 = new GreenfootImage("wdefender.png");
         lv2Image1 = new GreenfootImage("wdefender.png");
-        //no proper second img
         lv2Image2 = new GreenfootImage("wdefender.png");
         setImage(lv1Image1);
         //Initialize firing variables. 
