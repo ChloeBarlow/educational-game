@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=EnemyCounter
+comment0.text=\r\n\ Counts\ how\ many\ enemies\ have\ entered\ the\ base\ and\ will\ update\ display\ \r\n\ accordingly\r\n\ \r\n\ @author\ (Connie\ Lin)\ \r\n\ @version\ (01/28/21)\r\n
+comment1.params=size
+comment1.target=EnemyCounter(int)
+comment1.text=\r\n\ The\ main\ constructor,\ create\ a\ greenfoot\ image\ with\ the\ text\ and\ the\ size\ inputed.\r\n\ \r\n\ @param\ size\ \ \ \ \ The\ size\ of\ the\ image.\r\n
+comment2.params=counter\ size
+comment2.target=void\ addEnemyCount(int,\ int)
+comment2.text=\r\n\ Adds\ to\ the\ enemy\ count\r\n\ \r\n\ @param\ counter\ \ \ The\ new\ number\ of\ enemies\r\n\ @param\ size\ \ \ \ \ \ The\ size\ of\ the\ image\r\n
+numComments=3

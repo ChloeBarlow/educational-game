@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Towers
+comment0.text=\r\n\ Fires\ at\ enemies.\r\n\ \r\n\ @author\ Sisi\ Li\ \r\n\ @version\ 1/28/2021\r\n
+comment1.params=isBall
+comment1.target=void\ targetClosestEnemy(boolean)
+comment1.text=\r\n\ Fires\ at\ closest\ enemy.\ Animation\ included\ as\ well.\r\n
+comment2.params=
+comment2.target=void\ upgrade()
+comment2.text=\r\n\ Upgrades\ tower.\ Changes\ ROF\ and\ damage.\ \r\n
+comment3.params=
+comment3.target=int\ getCost()
+comment3.text=\r\n\ Returns\ cost\r\n
+comment4.params=
+comment4.target=int\ getUpgradeCost()
+comment4.text=\r\n\ Returns\ cost\ of\ upgrading\ tower\r\n
+comment5.params=
+comment5.target=boolean\ getIsUpgraded()
+comment5.text=\r\n\ returns\ boolean\ of\ whether\ or\ not\ tower\ is\ upgraded.\ \r\n
+numComments=6

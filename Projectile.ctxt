@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Projectile
+comment0.text=\r\n\ Either\ a\ ball\ or\ arrow\ is\ spawned.\ Deals\ enemies\ damage.\r\n\ \r\n\ @author\ Sisi\ Li\ and\ Cassidy\ Li\r\n\ @version\ 1/28/2021\r\n
+comment1.params=speed\ damage\ isBall
+comment1.target=Projectile(int,\ int,\ boolean)
+comment1.text=\r\n\ Contructor\ for\ Projectile.\r\n\ \r\n\ @param\ int\ speed\ \ \ \ \ \ \ \ \ \ \ Speed\ of\ projectile\r\n\ @param\ int\ damage\ \ \ \ \ \ \ \ \ \ Amount\ of\ damage\r\n\ @param\ boolean\ isBall\ \ \ \ \ \ True\ to\ spawn\ ball,\ false\ to\ spawn\ arrow\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Moves.\ Hits\ enemy\ and\ disappear.\ Also\ disappears\ at\ world\ edge.\r\n
+comment3.params=
+comment3.target=void\ checkHitEnemy()
+comment4.params=
+comment4.target=void\ checkEdges()
+numComments=5

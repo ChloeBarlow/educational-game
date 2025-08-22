@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=GameOver
+comment0.text=\r\n\ The\ ending\ screen\ that\ displays\ the\ players\ score\ and\ gives\ the\ option\ to\r\n\ restart\ or\ return\ to\ the\ main\ menu\r\n\ \r\n\ @author\ (Cassidy\ Li)\ \r\n\ @version\ (01/28/21)\r\n
+comment1.params=
+comment1.target=GameOver()
+comment1.text=\r\n\ Main\ constructor,\ sets\ the\ layout\ of\ the\ screen\ including\ the\ buttons\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Checks\ if\ buttons\ have\ been\ click\ and\ will\ respond\ accordingly\r\n
+numComments=3

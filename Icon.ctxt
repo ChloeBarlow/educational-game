@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Icon
+comment0.text=\r\n\ A\ simple\ widget\ class\ that\ is\ written\ for\ this\ game.\ create\ icons\ with\ a\ customizable\ image.\ \r\n\ The\ icon\ is\ just\ for\ displaying,\ it\ does\ not\ do\ anything\ on\ its\ own.\r\n\ \r\n\ @author\ (Liangyi\ Jinjing)\ \r\n\ @version\ (1/27/2021)\r\n
+comment1.params=type\ transparency
+comment1.target=Icon(int,\ int)
+comment1.text=\r\n\ The\ main\ constructor\ for\ Icon,\ takes\ in\ an\ int\ variable\ that\ indicate\ what\ type\ of\ icon\ this\ class\ is,\r\n\ also\ takes\ in\ an\ int\ variable\ that\ indicates\ how\ transparent\ the\ image\ will\ be.\r\n\ \r\n\ @param\ \ \ \ int\ type\ \ \ \ \ \ \ \ \ \ \ \ int\ variable\ that\ indicate\ what\ type\ of\ icon\ this\ class\ is\r\n\ @param\ \ \ \ int\ transparency\ \ \ \ int\ variable\ that\ indicates\ how\ transparent\ the\ image\ will\ be\r\n
+comment2.params=
+comment2.target=int\ getType()
+comment2.text=\r\n\ Getter\ method\ that\ tells\ the\ user\ what\ type\ of\ icon\ this\ is.\r\n\ \r\n\ @return\ \ \ \ mtType\ \ \ \ The\ int\ variable\ that\ indicates\ what\ type\ of\ icon\ this\ is.\r\n
+comment3.params=type\ transparency
+comment3.target=void\ change(int,\ int)
+comment3.text=\r\n\ Change\ the\ icon\ to\ a\ new\ type\ and\ a\ new\ transparency.\r\n\ \r\n\ @param\ \ \ \ int\ type\ \ \ \ \ \ \ \ \ \ \ \ The\ int\ variable\ that\ indicates\ what\ type\ of\ icon\ the\ original\ icon\ will\ change\ into.\r\n\ @param\ \ \ \ int\ transparency\ \ \ \ How\ transparent\ the\ new\ icon\ will\ be.\r\n
+numComments=4

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Base
+comment0.text=\r\n\ The\ enemies'\ final\ destination.\ Player\ will\ lose\ if\ too\ many\ enemies\ enter\r\n\ the\ base\r\n\ \r\n\ @author\ Connie\ Lin\r\n\ @version\ (1/28/2021)\r\n
+comment1.params=
+comment1.target=Base()
+comment1.text=\r\n\ Main\ constructir\ that\ sets\ the\ image\ of\ the\ Base\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ Method\ that\ remove\ counter,\ stop\ background\ music\ and\ store\ the\ highest\ score\ obtained\r\n\ by\ players\r\n
+numComments=3

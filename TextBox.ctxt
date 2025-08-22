@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TextBox
+comment0.text=\r\n\ Rectangle\ images\ that\ will\ hold\ text\ in\ instruction\ menu\r\n\ \r\n\ @author\ (Liangyi\ Jinjing)\ \r\n\ @version\ (1/28/2021)\r\n
+comment1.params=
+comment1.target=TextBox()
+comment1.text=\r\n\ Main\ construction\ for\ Textbox.\ Takes\ no\ parameters\ and\ creates\ a\ \r\n\ rectangular\ image.\r\n
+numComments=2

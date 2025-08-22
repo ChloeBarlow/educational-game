@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SwordMan
+comment0.text=\r\n\ A\ type\ of\ enemy\r\n\ \r\n\ @author\ (Cassidy\ Li)\ \r\n\ @version\ (01/28/21)\r\n
+comment1.params=
+comment1.target=SwordMan()
+comment1.text=\r\n\ Main\ constructors,\ sets\ image,\ speed,\ and\ Hp\ of\ sword\ man\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ Moves\ sword\ man\ and\ removes\ it\ if\ it\ died\r\n
+numComments=3

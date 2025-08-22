@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ScoreBoard
+comment0.text=\r\n\ Displays\ the\ score\ and\ money\ of\ the\ player\r\n\ \r\n\ @author\ (Sisi\ Li)\ \r\n\ @version\ (01/28/21)\r\n
+comment1.params=name
+comment1.target=ScoreBoard(java.lang.String)
+comment1.text=\r\n\ Construct\ a\ ScoreBar\ of\ the\ appropriate\ size.\r\n\ \r\n\ @param\ width\ \ \ \ \ width\ of\ the\ World\ where\ the\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ScoreBar\ will\ be\ placed\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ updates\ image\ of\ scoreboard\ display\r\n
+comment3.params=points
+comment3.target=void\ addScore(int)
+comment3.text=\r\n\ Adds\ points\ to\ score\r\n\ \r\n\ @param\ points\ \ Point\ to\ add\ to\ score\r\n
+comment4.params=
+comment4.target=int\ getScore()
+comment4.text=\r\n\ Returns\ score\r\n\ @return\ score\ \ \ Score\ to\ return\r\n
+numComments=5

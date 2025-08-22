@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Catapult
+comment0.text=\r\n\ Shoots\ cannonball\ at\ enemies.\ Medium\ ROF,\ damage,\ and\ cost.\r\n\ \r\n\ @author\ Sisi\ Li\r\n\ @version\ 1/28/2021\r\n
+comment1.params=
+comment1.target=Catapult()
+comment1.text=\r\n\ Constructor\ for\ cannon.\ Initializes\ inherited\ variables.\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Fires\ at\ enemy\r\n
+numComments=3

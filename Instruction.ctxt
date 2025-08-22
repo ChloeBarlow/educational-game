@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Instruction
+comment0.text=\r\n\ The\ instruction\ on\ how\ to\ play\ the\ game,\ the\ user\ can\ click\ the\ button\ to\r\n\ get\ back\ to\ the\ main\ menu.\r\n\ \r\n\ @author\ (Liangyi\ Jinjing)\ \r\n\ @version\ (1/28/2021)\r\n
+comment1.params=
+comment1.target=Instruction()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Instruction.\r\n\ Takes\ no\ parameter,\ creates\ an\ instruction\ menu\ for\ this\ game.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ The\ act\ method\ for\ the\ instruction\ menu.\r\n\ Gets\ called\ once\ every\ act.\r\n\ Detect\ if\ the\ player\ has\ clicked\ on\ the\ back\ button,\ \r\n\ if\ the\ player\ did,\ set\ the\ world\ back\ to\ the\ starting\ screen.\r\n
+numComments=3

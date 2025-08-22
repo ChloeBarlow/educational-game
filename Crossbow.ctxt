@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Crossbow
+comment0.text=\r\n\ Shoots\ crossbow\ at\ enemies.\ Low\ ROF,\ high\ damage,\ and\ high\ cost.\r\n\ \r\n\ @author\ Sisi\ Li\r\n\ @version\ 1/28/2021\r\n
+comment1.params=
+comment1.target=Crossbow()
+comment1.text=\r\n\ Contructor\ for\ crossbow.\ Initializes\ inherited\ variables.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Fires\ at\ enemy\r\n
+numComments=3

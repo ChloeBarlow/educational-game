@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=PathFinding
+comment0.text=\r\n\ Simple\ and\ not\ the\ most\ efficient,\ but\ functional\ path\ finding\ algorithm.\r\n\ Checks\ grids\ surrounding\ enemy\ to\ determine\ the\ direction\ of\ the\ next\ path.\r\n\ \r\n\ @author\ (Cassidy\ Li)\ \r\n\ @version\ (21/01/21)\r\n
+comment1.params=enemy\ numGridsHor\ numGridsVer
+comment1.target=java.lang.String\ findPath(Enemies,\ int,\ int)
+comment1.text=\r\n\ Pathfinding\ method\ for\ enemy,\ checks\ surrounding\ grids\ to\ determine\ a\ \r\n\ path\r\n\ \r\n\ @param\ enemy\ \ \ \ \ \ \ \ \ The\ enemy\ that\ needs\ to\ implement\ pathfinding\r\n\ @param\ numGridsHor\ \ \ The\ number\ of\ grids\ horizontally\r\n\ @param\ numGridsVer\ \ \ The\ number\ of\ grids\ vertically\r\n\ \r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ Returns\ the\ direction\ of\ the\ next\ path\ relative\ to\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ enemy's\ current\ position.\ Returns\ end\ if\ no\ more\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ paths\ are\ available\r\n
+comment2.params=enemy\ indexX\ indexY\ maxX\ maxY
+comment2.target=boolean\ checkLeft(Enemies,\ int,\ int,\ int,\ int)
+comment3.params=enemy\ indexX\ indexY\ maxX\ maxY
+comment3.target=boolean\ checkRight(Enemies,\ int,\ int,\ int,\ int)
+comment4.params=enemy\ indexX\ indexY\ maxX\ maxY
+comment4.target=boolean\ checkUp(Enemies,\ int,\ int,\ int,\ int)
+comment5.params=enemy\ indexX\ indexY\ maxX\ maxY
+comment5.target=boolean\ checkDown(Enemies,\ int,\ int,\ int,\ int)
+numComments=6
