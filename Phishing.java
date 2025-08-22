@@ -3,16 +3,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * A type of enemy
  * 
- * @author (Cassidy Li) 
- * @version (01/28/21)
+ * @author Chloe Barlow, Richie Shin
+ * @version 8/22/25
  */
 public class Phishing extends Enemies
 {
     /**
-     * Main constructors, sets image, speed, and Hp of sword man
+     * Main constructors, sets image, speed, and Hp of phishing attack
      */
     public Phishing(){
-        image = new GreenfootImage("knight.png");
+        image = new GreenfootImage("phishing.png");
         setImage(image);
         speed = 1;
         maxHp = 30;
@@ -22,7 +22,7 @@ public class Phishing extends Enemies
         money = 5;
     }
     /**
-     * Act - Moves sword man and removes it if it died
+     * Act - Moves phishing attack and removes it if it died
      */
     public void act() 
     {
