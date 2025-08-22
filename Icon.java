@@ -26,7 +26,7 @@ public class Icon extends Actor
     public Icon(int type, int transparency){
         myType = type;
         tempImage = new GreenfootImage(1, 1);
-        Image1 = new GreenfootImage("crossbow_lv1_01.png");
+        Image1 = new GreenfootImage("wdefender.png");
         Image1.mirrorHorizontally();
         Image2 = new GreenfootImage("catapult_lv1_01.png");
         Image2.mirrorHorizontally();
