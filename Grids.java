@@ -19,7 +19,7 @@ public class Grids extends Actor
     private boolean mouseOver;
     private GameWorld world;
     private MouseInfo m;
-    private GreenfootImage grassImage;
+    private GreenfootImage techImage;
     private GreenfootImage pathImage;
     /**
      * The main constructor for Grids, takes in a x index and a y index as parameter
@@ -31,11 +31,11 @@ public class Grids extends Actor
      */
     public Grids(int xIndex, int yIndex){
         //Credits: Robotao
-        grassImage = new GreenfootImage("grass_tile.png");
-        pathImage = new GreenfootImage("path.png");
+        techImage = new GreenfootImage("tech_background.jpg");
+        pathImage = new GreenfootImage("blue.png");
         pathImage.scale(50, 50);
         isEmpty = true;
-        setImage(grassImage);
+        setImage(techImage);
         x = xIndex * 50 + 25;
         y = yIndex * 50 + 25;
     }
@@ -53,12 +53,12 @@ public class Grids extends Actor
         if (m != null){
             if (!mouseOver && m.getX() > (x - 25) && m.getX() < (x + 25) && m.getY() > (y - 25) && m.getY() < (y + 25)){
                 mouseOver = true;
-                grassImage.setTransparency(180);
+                techImage.setTransparency(180);
             }
             if (mouseOver){
                 if(m.getX() < (x - 25) || m.getX() > (x + 25) || m.getY() > (y + 25) || m.getY() < (y - 25)){
                     mouseOver = false;
-                    grassImage.setTransparency(255);
+                    techImage.setTransparency(255);
                 }
             }
         }
