@@ -3,17 +3,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * A type of enemy
  * 
- * @author (Cassidy Li) 
- * @version (01/28/21)
+ * @author Chloe Barlow, Richie Shin
+ * @version 8/22/25
  */
 public class DownloadVirus extends Enemies
 {
     /**
-     * Main constructors, sets image, speed, and Hp of cavalry
+     * Main constructors, sets image, speed, and Hp of the download virus
      */
 
     public DownloadVirus(){
-        image = new GreenfootImage("cavalry.png");
+        image = new GreenfootImage("downloadVirus.png");
         setImage(image);
         speed = 2;
         maxHp = 20;
@@ -23,7 +23,7 @@ public class DownloadVirus extends Enemies
         money = 15;
     }
     /**
-     * Act - Moves sword man and removes it if it died
+     * Act - moves virus and removes it if it died
      */
     public void act() 
     {
