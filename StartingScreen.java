@@ -13,7 +13,7 @@ public class StartingScreen extends World
     private Button startButton;
     private Button instructions;
     private Button info;
-    private Text medieval;
+    private Text cyberSecurity;
     private Text towerDefense;
     /**
      * Main constructor, sets the layout of the screen
@@ -22,13 +22,13 @@ public class StartingScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 600, 1); 
-        setBackground(new GreenfootImage("background.png"));
+        setBackground(new GreenfootImage("starting_background.jpg"));
         startButton = new Button("START", 40, Color.WHITE);
         instructions = new Button("INSTRUCTIONS", 40, Color.WHITE);
         info = new Button("INFORMATION", 40, Color.WHITE);
-        medieval = new Text("CYBER", 60, Color.WHITE);
+        cyberSecurity = new Text("CYBER", 60, Color.WHITE);
         towerDefense = new Text("DEFENSE", 60, Color.WHITE);
-        addObject(medieval, 770, 65);
+        addObject(cyberSecurity, 770, 65);
         addObject(towerDefense, 770, 120);
         addObject(startButton, 770, 190);
         addObject(instructions, 770, 230);
