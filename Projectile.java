@@ -22,9 +22,9 @@ public class Projectile extends Actor
         this.speed = speed;
         this.damage = damage;
         if (isBall) 
-            setImage(new GreenfootImage("cannon_ball.png"));
+            setImage(new GreenfootImage("stop.png"));
         else
-            setImage(new GreenfootImage("arrow.png"));
+            setImage(new GreenfootImage("delete.png"));
     }
     /**
      * Moves. Hits enemy and disappear. Also disappears at world edge.
