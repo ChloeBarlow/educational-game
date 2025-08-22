@@ -4,8 +4,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Shoots catapult at enemies. High ROF, low damage, and low cost.
  * 
- * @author Sisi Li
- * @version 1/28/2021
+ * @author Chloe Barlow
+ * @version 8/22/25
  */
 public class NordVPN extends Towers
 {
@@ -14,10 +14,10 @@ public class NordVPN extends Towers
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public NordVPN() {    
-        lv1Image1 = new GreenfootImage("cannon_lv1.png");
-        lv1Image2 = new GreenfootImage("cannon_lv1.png");
-        lv2Image1 = new GreenfootImage("cannon_lv2.png");
-        lv2Image2 = new GreenfootImage("cannon_lv2.png");
+        lv1Image1 = new GreenfootImage("nordvpn.png");
+        lv1Image2 = new GreenfootImage("nordvpn.png");
+        lv2Image1 = new GreenfootImage("nordvpn.png");
+        lv2Image2 = new GreenfootImage("nordvpn.png");
         setImage(lv1Image1);
         range = 400;   
         ROF = 30;
