@@ -134,7 +134,7 @@ public class GameWorld extends World {
         setSpawnRate();
         
         score = scoreboard.getScore();
-        bgm.playLoop();
+        //bgm.playLoop();
         spawnEnemies();
         m = Greenfoot.getMouseInfo();
         if(m != null){         
@@ -191,7 +191,7 @@ public class GameWorld extends World {
                                 moneyboard.addScore(-towers[x][y].getCost());
                             }
                             else if(indicator.getType() == 2){
-                                Catapult tempCatapult = new Catapult();
+                                Norton360 tempCatapult = new Norton360();
                                 addObject(tempCatapult, grids[x][y].getx(), grids[x][y].gety());
                                 towers[x][y] = tempCatapult;
                                 grids[x][y].setEmpty(false);
@@ -200,7 +200,7 @@ public class GameWorld extends World {
                                 moneyboard.addScore(-towers[x][y].getCost());
                             }
                             else if(indicator.getType() == 3){
-                                Cannon tempCannon = new Cannon();
+                                NordVPN tempCannon = new NordVPN();
                                 addObject(tempCannon, grids[x][y].getx(), grids[x][y].gety());
                                 towers[x][y] = tempCannon;
                                 grids[x][y].setEmpty(false);
