@@ -13,7 +13,7 @@ public class TrojanHorse extends Enemies
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void TrojanHorse(){
-        image = new GreenfootImage("trojanhorse.jpg");
+        image = new GreenfootImage("trojanhorse.png");
         image.scale(25,25);
         setImage(image);
         speed = 1;
