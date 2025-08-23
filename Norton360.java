@@ -13,10 +13,10 @@ public class Norton360 extends Towers
      */
     public Norton360() {    
         //Initialize animation frames
-        lv1Image1 = new GreenfootImage("catapult_lv1_01.png");
-        lv1Image2 = new GreenfootImage("catapult_lv1_01.png");
-        lv2Image1 = new GreenfootImage("catapult_lv2_01.png");
-        lv2Image1 = new GreenfootImage("catapult_lv2_02.png");
+        lv1Image1 = new GreenfootImage("norton.png");
+        lv1Image2 = new GreenfootImage("norton.png");
+        lv2Image1 = new GreenfootImage("norton.png");
+        lv2Image1 = new GreenfootImage("norton.png");
         setImage(lv1Image1);
         //Initialize firing variables
         range = 500;   
