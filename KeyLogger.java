@@ -12,7 +12,7 @@ public class KeyLogger extends Enemies
      * Main constructors, sets image, speed, and Hp of crossbow man
      */
     public KeyLogger(){
-        image = new GreenfootImage("crossbow_knight_01.png");
+        image = new GreenfootImage("keylogger.png");
         setImage(image);
         speed = 1;
         maxHp = 10;
