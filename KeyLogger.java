@@ -15,11 +15,11 @@ public class KeyLogger extends Enemies
         image = new GreenfootImage("keylogger.png");
         setImage(image);
         speed = 1;
-        maxHp = 10;
+        maxHp = 15;
         currHp = maxHp;
         name = "KeyLogger";
         score = 15;
-        money = 10;
+        money = 20;
     }
     /**
      * Act - Moves sword man and removes it if it died

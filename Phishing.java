@@ -14,12 +14,12 @@ public class Phishing extends Enemies
     public Phishing(){
         image = new GreenfootImage("phishing.png");
         setImage(image);
-        speed = 1;
-        maxHp = 30;
+        speed = 3;
+        maxHp = 20;
         currHp = maxHp;
         name = "Phishing";
-        score = 10;
-        money = 5;
+        score = 20;
+        money = 30;
     }
     /**
      * Act - Moves phishing attack and removes it if it died

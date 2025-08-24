@@ -27,11 +27,8 @@ public class Icon extends Actor
         myType = type;
         tempImage = new GreenfootImage(1, 1);
         Image1 = new GreenfootImage("wdefender.png");
-        Image1.mirrorHorizontally();
         Image2 = new GreenfootImage("norton.png");
-        Image2.mirrorHorizontally();
         Image3 = new GreenfootImage("nordvpn.png");
-        Image3.mirrorHorizontally();
         Image4 = new GreenfootImage("upgrade.png");
         if(type == 0){
             setImage(tempImage);

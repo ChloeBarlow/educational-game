@@ -16,11 +16,11 @@ public class DownloadVirus extends Enemies
         image = new GreenfootImage("downloadVirus.png");
         setImage(image);
         speed = 2;
-        maxHp = 20;
+        maxHp = 35;
         currHp = maxHp;
         name = "DownloadVirus";
         score = 20;
-        money = 15;
+        money = 30;
     }
     /**
      * Act - moves virus and removes it if it died

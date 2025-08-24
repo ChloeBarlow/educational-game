@@ -23,8 +23,8 @@ public class NordVPN extends Towers
         ROF = 30;
         newROF = 25;
         projSpeed = 5;
-        damage = 2;
-        newDamage = 5;
+        damage = 3;
+        newDamage = 6;
         upgradeCost = 300;
         cost = 200;
     }

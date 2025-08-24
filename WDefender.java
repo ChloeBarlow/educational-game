@@ -23,8 +23,8 @@ public class WDefender extends Towers
         ROF = 20;
         newROF = 15;
         projSpeed = 7;
-        damage = 1;
-        newDamage = 2;
+        damage = 2;
+        newDamage = 4;
         cost = 100;
         upgradeCost = 150;
     }

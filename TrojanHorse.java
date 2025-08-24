@@ -17,11 +17,11 @@ public class TrojanHorse extends Enemies
         image.scale(25,25);
         setImage(image);
         speed = 1;
-        maxHp = 40;
+        maxHp = 60;
         currHp = maxHp;
         name = "Trojan";
-        score = 20;
-        money = 30;
+        score = 50;
+        money = 40;
     }
     public void act()
     {

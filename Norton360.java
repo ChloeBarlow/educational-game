@@ -23,8 +23,8 @@ public class Norton360 extends Towers
         ROF = 20; 
         newROF = 32;
         projSpeed = 7;
-        damage = 3;
-        newDamage = 5;
+        damage = 5;
+        newDamage = 8;
         cost = 300;
         upgradeCost = 450;
     }

@@ -31,21 +31,21 @@ public class GameWorld extends World {
     private ScoreBoard moneyboard = new ScoreBoard("Money: "); 
     private BuildMenu menu;
     private Icon indicator;
-    private Icon crossbowIcon;
-    private Icon catapultIcon;
-    private Icon cannonIcon;
+    private Icon windowDefenderIcon;
+    private Icon nortonIcon;
+    private Icon nordvpnIcon;
     private Icon upgradeIcon;
     private GreenfootImage tempImage;
     private int counter = 0;
     private EnemyCounter enemyCount;
     private boolean changeSpawnRate;
     private boolean warning;
-    private Text crossbowCost;
-    private Text crossbowUpgradeCost;
-    private Text cannonCost;
-    private Text cannonUpgradeCost;
-    private Text catapultCost;
-    private Text catapultUpgradeCost;
+    private Text windowDefenderCost;
+    private Text windowDefenderUpgradeCost;
+    private Text nordvpnCost;
+    private Text nordvpnUpgradeCost;
+    private Text nortonCost;
+    private Text nortonUpgradeCost;
     private Text upgradeCost;
     //main 2D array used to store grid
     private Grids[][] grids;
@@ -90,33 +90,33 @@ public class GameWorld extends World {
         menu = new BuildMenu();
         addObject(menu, 196, 50);
         // Initialize and add the icons
-        crossbowIcon = new Icon(1, 255);
-        addObject(crossbowIcon, 50, 40);
-        catapultIcon = new Icon(2, 255);
-        addObject(catapultIcon, 150, 40);
-        cannonIcon = new Icon(3, 255);
-        addObject(cannonIcon, 250, 40);
+        windowDefenderIcon = new Icon(1, 255);
+        addObject(windowDefenderIcon, 50, 40);
+        nortonIcon = new Icon(2, 255);
+        addObject(nortonIcon, 150, 40);
+        nordvpnIcon = new Icon(3, 255);
+        addObject(nordvpnIcon, 250, 40);
         upgradeIcon = new Icon(4, 255);
         addObject(upgradeIcon, 340, 40);
         // Initialize the indicator
         indicator = new Icon(0, 255);
         addObject(indicator, 0 , 0);
         
-        upgradeCost = new Text("Upgrade Costs", 25, Color.BLACK);
-        crossbowCost = new Text("$100", 20, Color.BLACK);
-        crossbowUpgradeCost = new Text("Crossbow: $150", 20, Color.BLACK);
-        catapultCost = new Text("$300", 20, Color.BLACK);
-        catapultUpgradeCost = new Text("Catapult: $450", 20, Color.BLACK);
-        cannonCost = new Text("$200", 20, Color.BLACK);
-        cannonUpgradeCost = new Text("Cannon: $300", 20, Color.BLACK);
+        upgradeCost = new Text("Upgrade Costs", 25, Color.WHITE);
+        windowDefenderCost = new Text("$100", 20, Color.WHITE);
+        windowDefenderUpgradeCost = new Text("Windows Defender: $150", 20, Color.WHITE);
+        nortonCost = new Text("$300", 20, Color.WHITE);
+        nortonUpgradeCost = new Text("Norton 360: $450", 20, Color.WHITE);
+        nordvpnCost = new Text("$200", 20, Color.WHITE);
+        nordvpnUpgradeCost = new Text("NordVPN: $300", 20, Color.WHITE);
         
         addObject(upgradeCost, 565, 20);
-        addObject(crossbowCost, 45, 85);
-        addObject(crossbowUpgradeCost, 565, 45);
-        addObject(catapultCost, 145, 85);
-        addObject(catapultUpgradeCost, 565, 65);
-        addObject(cannonCost, 245, 85);
-        addObject(cannonUpgradeCost, 565, 85);
+        addObject(windowDefenderCost, 45, 85);
+        addObject(windowDefenderUpgradeCost, 565, 45);
+        addObject(nortonCost, 145, 85);
+        addObject(nortonUpgradeCost, 565, 65);
+        addObject(nordvpnCost, 245, 85);
+        addObject(nordvpnUpgradeCost, 565, 85);
         
         enemyCount = new EnemyCounter(25);
         addObject(enemyCount, getWidth() - enemyCount.getImage().getWidth()/2 - 5, 325);
@@ -139,7 +139,7 @@ public class GameWorld extends World {
         m = Greenfoot.getMouseInfo();
         if(m != null){         
             if(selected == false){
-                if(Greenfoot.mouseClicked(crossbowIcon)){
+                if(Greenfoot.mouseClicked(windowDefenderIcon)){
                     if(moneyboard.getScore() >= 100){
                         indicator.change(1, 180);   
                         selected = true;
@@ -149,7 +149,7 @@ public class GameWorld extends World {
                         warningText.setTransparency(255);
                     }
                 }
-                else if(Greenfoot.mouseClicked(catapultIcon)){
+                else if(Greenfoot.mouseClicked(nortonIcon)){
                     if( moneyboard.getScore() >= 300){
                         indicator.change(2, 180);
                         selected = true;
@@ -159,7 +159,7 @@ public class GameWorld extends World {
                         warningText.setTransparency(255);
                     }
                 }
-                else if(Greenfoot.mouseClicked(cannonIcon)){
+                else if(Greenfoot.mouseClicked(nordvpnIcon)){
                     if(moneyboard.getScore() >= 200){
                         indicator.change(3, 180);
                         selected = true;
@@ -311,17 +311,21 @@ public class GameWorld extends World {
     {      
         randomize = Greenfoot.getRandomNumber(spawnRate);
         if(!startGrid.isPathAvailable()){
-            if(randomize == 1 && score > 500)
+            if(randomize == 1 && score > 300)
             {
                 addObject(new DownloadVirus(), -25, 275);
             }
-            if(randomize == 2)
+            if(randomize == 2 || randomize == 10)
             {
                 addObject(new KeyLogger(), -25, 275);
             }
-            if(randomize == 3 && score > 250)
+            if(randomize == 3 && score > 150)
             {
                 addObject(new Phishing(), -25, 275);
+            }
+            if (randomize == 4 && score > 500)
+            {
+                addObject(new TrojanHorse(), -25, 275);
             }
         }
     }
