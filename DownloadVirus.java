@@ -16,7 +16,7 @@ public class DownloadVirus extends Enemies
         image = new GreenfootImage("downloadVirus.png");
         setImage(image);
         speed = 2;
-        maxHp = 35;
+        maxHp = 20;
         currHp = maxHp;
         name = "DownloadVirus";
         score = 20;

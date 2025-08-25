@@ -29,11 +29,11 @@ public class Info extends World
         // Add the text box to the world.
         addObject(textBox, 500, 300);
         title = new Text("INFORMATION", 60, Color.WHITE);
-        option1 = new Button("Anti-viruses", 80, Color.WHITE);
+        option1 = new Button("Antiviruses", 80, Color.WHITE);
         option2 = new Button("Viruses", 80, Color.WHITE);
         addObject(title, 500, 100);
-        addObject(option1, 500, 200);
-        addObject(option2, 500, 400);
+        addObject(option1, 500, 250);
+        addObject(option2, 500, 350);
         backButton = new Button("Back", 40, Color.WHITE);
         addObject(backButton, 500, 500);
     }

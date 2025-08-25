@@ -50,15 +50,15 @@ public class Instructions extends World
         line9 = new Text("If total of 10 viruses infects your computer, you lose", 20, Color.WHITE);
         // Add all the texts to the world.
         addObject(title, 500, 100);
-        addObject(line1, 500, 150);
-        addObject(line2, 500, 180);
-        addObject(line3, 500, 210);
-        addObject(line4, 500, 240);
-        addObject(line5, 500, 270);
-        addObject(line6, 500, 300);
-        addObject(line7, 500, 330);
-        addObject(line8, 500, 360);
-        addObject(line9, 500, 390);
+        addObject(line1, 500, 180);
+        addObject(line2, 500, 210);
+        addObject(line3, 500, 240);
+        addObject(line4, 500, 270);
+        addObject(line5, 500, 300);
+        addObject(line6, 500, 330);
+        addObject(line7, 500, 360);
+        addObject(line8, 500, 390);
+        addObject(line9, 500, 420);
         // Initialize the back button
         backButton = new Button("Back", 40, Color.WHITE);
         // Add the back button to the world.

@@ -15,7 +15,7 @@ public class KeyLogger extends Enemies
         image = new GreenfootImage("keylogger.png");
         setImage(image);
         speed = 1;
-        maxHp = 20;
+        maxHp = 35;
         currHp = maxHp;
         name = "KeyLogger";
         score = 10;

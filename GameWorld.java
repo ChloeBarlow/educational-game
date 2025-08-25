@@ -49,8 +49,8 @@ public class GameWorld extends World {
     private Text upgradeCost;
     //main 2D array used to store grid
     private Grids[][] grids;
-    //Credits: Music by Alexander Nakarada
-    private GreenfootSound bgm = new GreenfootSound("bloodEagle.mp3");
+    //Credits: Music from Cyberpunk 2077 (2020) distributed by CD Projekt, by Various Artists
+    private GreenfootSound bgm = new GreenfootSound("Hyper - Spoiler  Cyberpunk 2077 OST.mp3");
     private Text warningText;
     /**
      * Constructor for objects of class MyWorld.
@@ -59,7 +59,8 @@ public class GameWorld extends World {
     public GameWorld() {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 600, 1, false); 
-        bgm.setVolume(30);
+        bgm.setVolume(10);
+        bgm.play();
         //setBackground();
         spawnRate = 500;
         grids = new Grids [20] [12];
@@ -312,7 +313,7 @@ public class GameWorld extends World {
         if(!startGrid.isPathAvailable()){
             if(randomize == 1 && score > 300)
             {
-                addObject(new DownloadVirus(), -25, 275);
+                addObject(new KeyLogger(), -25, 275);
                 if (score > 600){
                     addObject(new KeyLogger(), -25, 275);
                 }
@@ -325,7 +326,7 @@ public class GameWorld extends World {
             }
             if(randomize == 2 || randomize == 10)
             {
-                addObject(new KeyLogger(), -25, 275);
+                addObject(new DownloadVirus(), -25, 275);
                 if (score > 600){
                     addObject(new KeyLogger(), -25, 275);
                 }
