@@ -182,36 +182,35 @@ public class GameWorld extends World {
                         int y = m.getY()/50;
                         if(grids[x][y].getEmpty() == true){
                             if(indicator.getType() == 1){ 
-                                WDefender tempCrossbow = new WDefender();
-                                addObject(tempCrossbow, grids[x][y].getx(), grids[x][y].gety());
-                                towers[x][y] = tempCrossbow;
+                                WDefender tempDefender = new WDefender();
+                                addObject(tempDefender, grids[x][y].getx(), grids[x][y].gety());
+                                towers[x][y] = tempDefender;
                                 grids[x][y].setEmpty(false);
                                 indicator.change(0, 0);
                                 selected = false;
                                 moneyboard.addScore(-towers[x][y].getCost());
                             }
                             else if(indicator.getType() == 2){
-                                Norton360 tempCatapult = new Norton360();
-                                addObject(tempCatapult, grids[x][y].getx(), grids[x][y].gety());
-                                towers[x][y] = tempCatapult;
+                                Norton360 tempNorton = new Norton360();
+                                addObject(tempNorton, grids[x][y].getx(), grids[x][y].gety());
+                                towers[x][y] = tempNorton;
                                 grids[x][y].setEmpty(false);
                                 indicator.change(0, 0);
                                 selected = false;
                                 moneyboard.addScore(-towers[x][y].getCost());
                             }
                             else if(indicator.getType() == 3){
-                                NordVPN tempCannon = new NordVPN();
-                                addObject(tempCannon, grids[x][y].getx(), grids[x][y].gety());
-                                towers[x][y] = tempCannon;
+                                NordVPN tempNordVPN = new NordVPN();
+                                addObject(tempNordVPN, grids[x][y].getx(), grids[x][y].gety());
+                                towers[x][y] = tempNordVPN;
                                 grids[x][y].setEmpty(false);
                                 indicator.change(0, 0);
                                 selected = false;
                                 moneyboard.addScore(-towers[x][y].getCost());
                             }                           
                         }
-                        if(grids[x][y].getEmpty() == false){
+                        if(grids[x][y].getEmpty() == false && grids[x][y].getPath() == false){
                             if(indicator.getType() == 4){
-                                 
                                 if(moneyboard.getScore() >= towers[x][y].getUpgradeCost() && towers[x][y].getIsUpgraded() == false){
                                     towers[x][y].upgrade();
                                     moneyboard.addScore(-towers[x][y].getUpgradeCost());
@@ -314,18 +313,50 @@ public class GameWorld extends World {
             if(randomize == 1 && score > 300)
             {
                 addObject(new DownloadVirus(), -25, 275);
+                if (score > 600){
+                    addObject(new KeyLogger(), -25, 275);
+                }
+                if (score > 800){
+                    addObject(new DownloadVirus(), -25, 275);
+                }
+                if (score > 1000){
+                    addObject(new Phishing(), -25, 275);
+                }
             }
             if(randomize == 2 || randomize == 10)
             {
                 addObject(new KeyLogger(), -25, 275);
+                if (score > 600){
+                    addObject(new KeyLogger(), -25, 275);
+                }
+                if (score > 800){
+                    addObject(new DownloadVirus(), -25, 275);
+                }
+                if (score > 1000){
+                    addObject(new Phishing(), -25, 275);
+                }
             }
             if(randomize == 3 && score > 150)
             {
                 addObject(new Phishing(), -25, 275);
+                if (score > 600){
+                    addObject(new KeyLogger(), -25, 275);
+                }
+                if (score > 800){
+                    addObject(new DownloadVirus(), -25, 275);
+                }
+                if (score > 1000){
+                    addObject(new Phishing(), -25, 275);
+                }
             }
             if (randomize == 4 && score > 500)
             {
-                addObject(new TrojanHorse(), -25, 275);
+                addObject(new TrojanHorse(), -45, 275);
+                if (score > 1200){
+                    addObject(new KeyLogger(), -25, 275);
+                    addObject(new DownloadVirus(), -25, 275);
+                    addObject(new Phishing(), -25, 275);
+                }
             }
         }
     }

@@ -12,15 +12,14 @@ public class TrojanHorse extends Enemies
      * Act - do whatever the TrojanHorse wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void TrojanHorse(){
+    public TrojanHorse(){
         image = new GreenfootImage("trojanhorse.png");
-        image.scale(25,25);
         setImage(image);
         speed = 1;
-        maxHp = 60;
+        maxHp = 150;
         currHp = maxHp;
         name = "Trojan";
-        score = 50;
+        score = 40;
         money = 40;
     }
     public void act()

@@ -16,7 +16,7 @@ public class Norton360 extends Towers
         lv1Image1 = new GreenfootImage("norton.png");
         lv1Image2 = new GreenfootImage("norton.png");
         lv2Image1 = new GreenfootImage("norton.png");
-        lv2Image1 = new GreenfootImage("norton.png");
+        lv2Image2 = new GreenfootImage("norton.png");
         setImage(lv1Image1);
         //Initialize firing variables
         range = 500;   
