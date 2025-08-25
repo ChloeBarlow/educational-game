@@ -25,8 +25,8 @@ public class NordVPN extends Towers
         projSpeed = 5;
         damage = 5;
         newDamage = 8;
-        upgradeCost = 300;
-        cost = 200;
+        upgradeCost = 450;
+        cost = 300;
     }
     public void act() 
     {
