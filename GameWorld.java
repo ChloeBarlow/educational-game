@@ -106,10 +106,10 @@ public class GameWorld extends World {
         upgradeCost = new Text("Upgrade Costs", 25, Color.WHITE);
         windowDefenderCost = new Text("$100", 20, Color.WHITE);
         windowDefenderUpgradeCost = new Text("Windows Defender: $150", 20, Color.WHITE);
-        nortonCost = new Text("$300", 20, Color.WHITE);
-        nortonUpgradeCost = new Text("Norton 360: $450", 20, Color.WHITE);
-        nordvpnCost = new Text("$200", 20, Color.WHITE);
-        nordvpnUpgradeCost = new Text("NordVPN: $300", 20, Color.WHITE);
+        nortonCost = new Text("$200", 20, Color.WHITE);
+        nortonUpgradeCost = new Text("Norton 360: $300", 20, Color.WHITE);
+        nordvpnCost = new Text("$300", 20, Color.WHITE);
+        nordvpnUpgradeCost = new Text("NordVPN: $450", 20, Color.WHITE);
         
         addObject(upgradeCost, 565, 20);
         addObject(windowDefenderCost, 45, 85);
