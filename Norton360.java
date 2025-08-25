@@ -25,8 +25,8 @@ public class Norton360 extends Towers
         projSpeed = 7;
         damage = 3;
         newDamage = 5;
-        cost = 300;
-        upgradeCost = 450;
+        cost = 200;
+        upgradeCost = 300;
     }
     /**
      * Fires at enemy
