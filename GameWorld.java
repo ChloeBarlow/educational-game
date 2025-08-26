@@ -151,20 +151,20 @@ public class GameWorld extends World {
                     }
                 }
                 else if(Greenfoot.mouseClicked(nortonIcon)){
-                    if( moneyboard.getScore() >= 300){
+                    if( moneyboard.getScore() >= 200){
                         indicator.change(2, 180);
                         selected = true;
-                    }else if(moneyboard.getScore() < 300){
+                    }else if(moneyboard.getScore() < 200){
                         warning = true;
                         warningText.setText("You don't have enough money to do that!");
                         warningText.setTransparency(255);
                     }
                 }
                 else if(Greenfoot.mouseClicked(nordvpnIcon)){
-                    if(moneyboard.getScore() >= 200){
+                    if(moneyboard.getScore() >= 300){
                         indicator.change(3, 180);
                         selected = true;
-                    }else if(moneyboard.getScore() < 200){
+                    }else if(moneyboard.getScore() < 300){
                         warning = true;
                         warningText.setText("You don't have enough money to do that!");
                         warningText.setTransparency(255);
