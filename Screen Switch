@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tower Defense - Screen Switch Example</title>
+  <style>
+    canvas { background: #222; display: block; margin: 0 auto; }
+    body { text-align: center; color: white; font-family: sans-serif; }
+    button { margin-top: 10px; padding: 10px 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<canvas id="gameCanvas" width="800" height="600"></canvas>
+<button id="startBtn">Start Game</button>
+<button id="restartBtn" style="display:none;">Restart</button>
+
+<script>
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
+
+const startBtn = document.getElementById("startBtn");
+const restartBtn = document.getElementById("restartBtn");
+
+// Game states (adds a... : "menu", "game", "gameover"
+let gameState = "menu";
+let gameTime = 0;
+let gameDuration = 5000; // 5 seconds to simulate game over
+
+function drawMenu() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "white";
+  ctx.font = "48px sans-serif";
+  ctx.fillText("Tower Defense", 260, 200);
+  ctx.font = "24px sans-serif";
+  ctx.fillText("Yo! Click Start to play", 300, 260);
+}
+
+function drawGame() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "lightgreen";
+  ctx.font = "24px sans-serif";
+  ctx.fillText("Game Running...", 320, 200);
+
+  // Simulate towers or enemies
+  ctx.fillStyle = "red";
+  ctx.fillRect(100 + Math.sin(gameTime / 300) * 50, 300, 30, 30);
+}
+
+function drawGameOver() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "white";
+  ctx.font = "48px sans-serif";
+  ctx.fillText("Game Over", 290, 200);
+}
+
+function update() {
+  if (gameState === "game") {
+    gameTime += 16; // ~60 FPS
+
+    if (gameTime > gameDuration) {
+      gameState = "gameover";
+      restartBtn.style.display = "inline";
+    }
+  }
+}
+
+function render() {
+  switch (gameState) {
+    case "menu":
+      drawMenu();
+      break;
+    case "game":
+      drawGame();
+      break;
+    case "gameover":
+      drawGameOver();
+      break;
+  }
+}
+
+function gameLoop() {
+  update();
+  render();
+  requestAnimationFrame(gameLoop);
+}
+
+// Button listeners
+startBtn.addEventListener("click", () => {
+  gameState = "game";
+  gameTime = 0;
+  startBtn.style.display = "none";
+});
+
+restartBtn.addEventListener("click", () => {
+  gameState = "menu";
+  restartBtn.style.display = "none";
+  startBtn.style.display = "inline";
+});
+
+gameLoop();
+</script>
+
+</body>
+</html>

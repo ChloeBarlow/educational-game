@@ -151,20 +151,20 @@ public class GameWorld extends World {
                     }
                 }
                 else if(Greenfoot.mouseClicked(nortonIcon)){
-                    if( moneyboard.getScore() >= 200){
+                    if( moneyboard.getScore() >= 300){
                         indicator.change(2, 180);
                         selected = true;
-                    }else if(moneyboard.getScore() < 200){
+                    }else if(moneyboard.getScore() < 300){
                         warning = true;
                         warningText.setText("You don't have enough money to do that!");
                         warningText.setTransparency(255);
                     }
                 }
                 else if(Greenfoot.mouseClicked(nordvpnIcon)){
-                    if(moneyboard.getScore() >= 300){
+                    if(moneyboard.getScore() >= 200){
                         indicator.change(3, 180);
                         selected = true;
-                    }else if(moneyboard.getScore() < 300){
+                    }else if(moneyboard.getScore() < 200){
                         warning = true;
                         warningText.setText("You don't have enough money to do that!");
                         warningText.setTransparency(255);
@@ -254,44 +254,85 @@ public class GameWorld extends World {
      * Make a path in the GameWorld for the Enemies to walk on
      */
     public void makePath(){       
-        grids[0][5].setPath();
-        grids[1][5].setPath();
-        grids[2][5].setPath();
-        grids[3][5].setPath();
-        grids[3][4].setPath();
-        grids[3][3].setPath();
-        grids[4][3].setPath();
-        grids[5][3].setPath();
-        grids[6][3].setPath();
-        grids[6][4].setPath();
-        grids[6][5].setPath();
-        grids[6][6].setPath();
-        grids[6][7].setPath();
-        grids[7][7].setPath();
-        grids[8][7].setPath();
-        grids[9][7].setPath();
-        grids[10][7].setPath();
-        grids[11][7].setPath();
-        grids[11][8].setPath();
-        grids[11][9].setPath();
-        grids[12][9].setPath();
-        grids[13][9].setPath();
-        grids[14][9].setPath();
-        grids[14][8].setPath();
-        grids[14][7].setPath();
-        grids[14][6].setPath();
-        grids[14][5].setPath();
-        grids[14][4].setPath();
-        grids[14][3].setPath();
-        grids[15][3].setPath();
-        grids[16][3].setPath();
-        grids[17][3].setPath();
-        grids[17][3].setPath();
-        grids[17][4].setPath();
-        grids[17][5].setPath();
-        grids[17][6].setPath();
-        grids[18][6].setPath();
-        grids[19][6].setPath();   
+        double randomize = (Math.random()*10);
+        //testing: System.out.println(randomize);
+        if (randomize <=5){
+            grids[0][5].setPath();
+            grids[1][5].setPath();
+            grids[2][5].setPath();
+            grids[3][5].setPath();
+            grids[3][4].setPath();
+            grids[3][3].setPath();
+            grids[4][3].setPath();
+            grids[5][3].setPath();
+            grids[6][3].setPath();
+            grids[6][4].setPath();
+            grids[6][5].setPath();
+            grids[6][6].setPath();
+            grids[6][7].setPath();
+            grids[7][7].setPath();
+            grids[8][7].setPath();
+            grids[9][7].setPath();
+            grids[10][7].setPath();
+            grids[11][7].setPath();
+            grids[11][8].setPath();
+            grids[11][9].setPath();
+            grids[12][9].setPath();
+            grids[13][9].setPath();
+            grids[14][9].setPath();
+            grids[14][8].setPath();
+            grids[14][7].setPath();
+            grids[14][6].setPath();
+            grids[14][5].setPath();
+            grids[14][4].setPath();
+            grids[14][3].setPath();
+            grids[15][3].setPath();
+            grids[16][3].setPath();
+            grids[17][3].setPath();
+            grids[17][3].setPath();
+            grids[17][4].setPath();
+            grids[17][5].setPath();
+            grids[17][6].setPath();
+            grids[18][6].setPath();
+            grids[19][6].setPath();
+        } else{
+            // Stage 2
+            grids[0][6].setPath();
+            grids[0][7].setPath();
+            grids[1][7].setPath();
+            //testing: System.out.println(grids[0][8].getPath());
+            grids[1][8].setPath();
+            grids[2][8].setPath();
+            grids[3][8].setPath();
+            grids[3][9].setPath();
+            grids[3][10].setPath();
+            grids[4][10].setPath();
+            grids[5][10].setPath();
+            grids[5][9].setPath();
+            grids[5][8].setPath();
+            grids[5][7].setPath();
+            grids[5][6].setPath();
+            grids[5][5].setPath();
+            grids[6][5].setPath();
+            grids[7][5].setPath();
+            grids[8][5].setPath();
+            grids[9][5].setPath();
+            grids[9][4].setPath();
+            grids[10][4].setPath();
+            grids[11][4].setPath();
+            grids[11][5].setPath();
+            grids[11][6].setPath();
+            grids[11][7].setPath();
+            grids[12][7].setPath();
+            grids[13][7].setPath();
+            grids[14][7].setPath();
+            grids[14][6].setPath();
+            grids[15][6].setPath();
+            grids[16][6].setPath();
+            grids[17][6].setPath();
+            grids[18][6].setPath();
+            grids[19][6].setPath();
+        }
     }
     /**
      * Method that sets the spawn rate of the Enemies base on the player's score 
